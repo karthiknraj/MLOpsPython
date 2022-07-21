@@ -15,7 +15,7 @@ resources:
   - container: mlops
     image: mcr.microsoft.com/mlops/python:latest
   pipelines:
-  - pipeline: model-train-ci
+  - pipeline: Batch-Scoring
     source: Model-Train-Register-CI # Name of the triggering pipeline
     trigger:
       branches:
